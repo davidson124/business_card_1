@@ -1,5 +1,5 @@
 html{
-    padding: 250px 50px;
+    padding: 180px 63px;
 }
 *{
     margin: 0;
@@ -9,32 +9,70 @@ html{
 body{
     background-color:rgb(247, 244, 239);
     border: solid 1px;
-    padding: .2em;
-    
 }
 .header_h{ 
-    display: flex;
+    display: grid;
+    grid-template-columns: 60px 150px 30px;
+    grid-template-rows: (1, 1fr);
     justify-content: space-between;
-    color: black;
-    font-size: .7em;
+    color: rgb(51, 48, 48);
+    font-size: .5em;
     font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     border-bottom: solid .1em;
-    padding: 0 1em;
-   
+    background-color: rgb(233, 227, 227);
+    align-items: center;
+}
+.title_1{
+    grid-column: 2;
+    padding: 7em 0;
+}
+.iconplay{
+    width: 4em;
+    height: 3em;
+    padding-left: .6em;
+    grid-column: 1;
+    
+}
+.image_menu{
+    padding-right: 3em;
 }
 .section_1{
-    justify-content: center;
-    padding: 1em 0;
-    text-align: center;
-    color:rgb(24, 26, 26)
     
-
+    background-image:url(images/back_section.jpg) ;
+    color:rgb(24, 26, 26);
+    text-align: center;
+    padding-bottom: .5em;
 }
+.section_1 .foto{
+    justify-content: end;
+    height: 8em;
+    width: 8em;
+    padding-bottom: 0;
+}
+.section_1 .js_im{
+    height: 2em;
+    width: 2em;
+}
+.name{
+    text-align: center;
+    justify-content: center;
+    font-size: 1.1em;
+}
+.name_2{
+    text-align: center;
+    justify-content: center;
+    font-size: 1.1em;
+    padding-bottom: .7em;
+}
+.paragraph{
+    padding-bottom: .2em;
+}
+
 .picture img{
     display: flex;
     width: 148px;
     height: 8.8em;
-    padding-bottom: .4em ; 
+    padding: 2em 0; 
 
 }
 .name {
@@ -42,21 +80,39 @@ body{
     padding-top: .5em; 
 
 }
-.last_name{
-     display: flex;
-    padding-top: .5em; 
+.subtitle {
+    font-size: 1.2em;
+    text-decoration:overline;
+    padding-top: .5em;
+    
 }
-.h_2 {
+.subtitle_2{
+    text-decoration-line:underline;
+    font-size: 1.2em;
+    padding-bottom: .5em
 }
 .paragraph {
+    padding: 0 .5em;
 }
 .socialred {
-    padding: ;
+    display: flex;
+    background-color: rgb(72, 180, 223);
+    justify-content: center;
 }
 .ul_1 {
     display:flex;
     list-style: none;
     justify-content: center;
-    padding-bottom: .3em;
-    gap: .8em;
+    padding: .4em;
+    gap: .3em;
+}
+.subsection{
+    padding-bottom: .5em;
+}
+@media screen {min
+    body{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
 }
