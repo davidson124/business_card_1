@@ -1,5 +1,5 @@
 html{
-    padding: 180px 63px;
+    padding: 130px 63px;
 }
 *{
     margin: 0;
@@ -7,7 +7,7 @@ html{
     box-sizing: border-box;
 }
 body{
-    background-color:rgb(247, 244, 239);
+    background-color:rgb(0, 0, 0);
     border: solid 1px;
 }
 .header_h{ 
@@ -109,10 +109,12 @@ body{
 .subsection{
     padding-bottom: .5em;
 }
-@media screen {min
+@media (max-width: 668px);
     body{
-        display: flex;
-        justify-content: center;
-        align-items: center;
+        border: solid 0;
     }
-}
+    html{
+    justify-items: center;
+    justify-content: center;
+    }
+
